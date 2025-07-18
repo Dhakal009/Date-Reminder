@@ -17,7 +17,7 @@ class Application{
             ],
             'POST' => [
                 '/register' => [RegistrationController::class, 'register'],
-                '/login' => [LoginController::class, 'login'],
+                '/login' => [LoginController::class, 'login']
             ]
        ];
        public function __construct(){

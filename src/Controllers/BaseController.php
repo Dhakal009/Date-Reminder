@@ -10,7 +10,7 @@ class BaseController {
         $this->twig = $twig;
     }
 
-    protected function render($filename):void{
-        echo $this->twig->render(name: $filename .'.twig');
+    protected function render($filename,array $data=[]):void{
+        echo $this->twig->render(name: $filename .'.twig',context: $data);
     }
 }
